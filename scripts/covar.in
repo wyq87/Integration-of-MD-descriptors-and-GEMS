@@ -1,0 +1,6 @@
+parm ../../../md/bgl3_solv.prmtop
+trajin ../../../md/bgl3_prod.nc  2000 20000 
+autoimage
+rms first :1-501@N,CA,C
+matrix covar name RES_COVAR :1-501@CA out bgl3_covar_1.dat
+

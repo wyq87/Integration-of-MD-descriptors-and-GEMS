@@ -1,0 +1,5 @@
+parm bgl3_nowat.prmtop
+trajin bgl3_md1_rep.c0.pdb
+#strip !@CA
+trajout bgl3_md1_repc0_new.pdb pdb chainid A 
+

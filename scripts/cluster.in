@@ -1,0 +1,15 @@
+parm ../../../md/bgl3_solv.prmtop
+trajin ../../../md/bgl3_prod.nc  2000 20000
+autoimage
+strip :WAT,Na+,Cl-
+cluster C0 \
+kmeans clusters 5 randompoint maxit 500 \
+rms :1-501@C,CA,N \
+sieve 10 random \
+out bgl3_cnumvtime.dat \
+summary bgl3_summary.dat \
+info bgl3_info.dat \
+cpopvtime bgl3_cpopvtime.dat normframe \
+repout bgl3_md1_rep repfmt pdb
+run
+

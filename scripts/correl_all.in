@@ -1,0 +1,10 @@
+parm ../../md/bgl3_solv.prmtop
+trajin ../../md/bgl3_prod.nc  2000 20000 
+trajin ../../md/2/bgl3_prod.nc  2000 20000 
+trajin ../../md/3/bgl3_prod.nc  2000 20000 
+trajin ../../md/4/bgl3_prod.nc  2000 20000 
+trajin ../../md/5/bgl3_prod.nc  2000 20000 
+autoimage
+rms first :1-501@N,CA,C
+matrix dist name RES_DIST :1-501@CA out bgl3_dist_all.dat
+matrix correl name RES_CORREL :1-501@CA out bgl3_corr_all.dat

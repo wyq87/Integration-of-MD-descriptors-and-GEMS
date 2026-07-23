@@ -1,0 +1,3 @@
+parm ../../../md/bgl3_solv.prmtop
+parmstrip :WAT,Na+,Cl-
+parmwrite out bgl3_nowat.prmtop 
