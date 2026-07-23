@@ -65,7 +65,7 @@ The generated residue-level scores are used for ranking candidate mutation sites
 
 ---
 
-# 2. Shortest Pathway Method (SPM)
+## 2. Shortest Pathway Method (SPM)
 
 SPM analysis requires residue-residue distance and correlation matrices.
 
@@ -95,7 +95,7 @@ is used for subsequent SPM-based residue ranking.
 
 ---
 
-# 3. Transfer Entropy (TE)
+## 3. Transfer Entropy (TE)
 
 Generate covariance matrices from MD trajectories using:
 
@@ -113,7 +113,7 @@ The covariance matrices are used for transfer entropy analysis to characterize r
 
 ---
 
-# 4. Dynamic Cross-Correlation Matrix (DCCM)
+## 4. Dynamic Cross-Correlation Matrix (DCCM)
 
 Generate residue correlation matrices using:
 
