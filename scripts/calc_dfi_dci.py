@@ -7,6 +7,15 @@ Description
 Calculate Dynamic Flexibility Index, DFI, or Dynamic Coupling Index, DCI,
 from a single PDB structure or a provided covariance / inverse Hessian matrix.
 
+This script is modified based on:
+
+Original repository:
+https://github.com/SBOZKAN/DFI-DCI
+
+Original author:
+SBOZKAN
+
+
 Usage
 -----
 DFI only:
