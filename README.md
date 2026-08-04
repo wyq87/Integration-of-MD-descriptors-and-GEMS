@@ -52,7 +52,7 @@ Example:
 python scripts/calc_dfi_dci.py --pdb bgl3.pdb
 ```
 ```bash
-pythin scrips/calc_dfi_dci.py --pdb bgl3.pdb --dci A178 A383
+python scripts/calc_dfi_dci.py --pdb bgl3.pdb --dci A178 A383
 ```
 `A178` and `A383` are functual residues in active center. 
 
