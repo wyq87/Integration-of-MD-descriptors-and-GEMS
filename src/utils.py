@@ -255,6 +255,6 @@ def get_dms_and_gems_file(file, outfile, far_resi_set):
    
     df_near.to_csv(outfile, index=False)
 
-    print(f"{outfile}已生成，共 {len(df_near)} 条")
+    print(f"{outfile} has been generated with {len(df_near)} entries.")
 
 
