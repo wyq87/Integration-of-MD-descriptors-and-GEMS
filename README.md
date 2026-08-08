@@ -3,7 +3,7 @@ This repository provides a workflow for integrating molecular dynamics (MD)-deri
 The workflow combines multiple MD-based descriptors, including:
 - Dynamic Flexibility Index (DFI)
 - Dynamic Coupling Index (DCI)
-- Shortest Pathway Method (SPM)
+- Shortest Path Map (SPM)
 - Transfer Entropy (TE)
 - Dynamic Cross-Correlation Matrix (DCCM)
   
@@ -65,7 +65,7 @@ The generated residue-level scores are used for ranking candidate mutation sites
 
 ---
 
-## 2. Shortest Pathway Method (SPM)
+## 2. Shortest Path Map (SPM)
 
 SPM analysis requires residue-residue distance and correlation matrices.
 
