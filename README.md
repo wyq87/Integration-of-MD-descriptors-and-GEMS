@@ -9,7 +9,7 @@ The workflow combines multiple MD-based descriptors, including:
   
 for ranking candidate mutation sites and evaluating their enrichment using deep mutational scanning (DMS) data.
 
-## Workflow
+# Workflow
 Benchmark workflow for integrating five MD-derived descriptors with GEMS. For seven enzymes, five independent 200 ns MD simulations were performed. After confirming structural stability, trajectories from 20-200 ns were used to calculate five MD-derived dynamic descriptors, including DCCM, DFI, DCI, TE, and SPM. For each descriptor, residues were ranked based on their average values across five trajectories, and the top 10-100 sites were selected. For each descriptor, all mutations at selected sites were ranked by GEMS score, and the top 100 were selected. Their union defined the hybrid mutation set. Performance was assessed by the number of variants ranked within the top 100 of the corresponding DMS landscape.
 
 <img width="865" height="675" alt="image" src="https://github.com/user-attachments/assets/6b151cb3-c3ba-4640-9e49-134a08315390" />
