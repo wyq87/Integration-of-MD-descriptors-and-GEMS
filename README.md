@@ -97,6 +97,7 @@ is used for subsequent SPM-based residue ranking.
 
 ### 3. Transfer Entropy (TE)
 
+#### Step 1
 Generate covariance matrices from MD trajectories using:
 
 ```
@@ -112,6 +113,15 @@ cpptraj -i scripts/covar.in
 The covariance matrices are used for transfer entropy analysis to characterize residue communication.
 
 ---
+
+#### Step 2
+Generate `norm_differece`file using:
+```
+scripts/dfcfGNMMD.py --pdb casp_dry.pdb --covar casp_covar_1.dat
+```
+`casp_covar_1.dat` is the covariance file generated in Step 1.
+
+The output file will be named according to the input covariance file, e.g., norm_difference_1, corresponding to `casp_covar_1.dat`.
 
 ### 4. Dynamic Cross-Correlation Matrix (DCCM)
 
