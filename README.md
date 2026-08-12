@@ -9,24 +9,24 @@ The workflow combines multiple MD-based descriptors, including:
   
 for ranking candidate mutation sites and evaluating their enrichment using deep mutational scanning (DMS) data.
 
-# Workflow
+## Workflow
 Benchmark workflow for integrating five MD-derived descriptors with GEMS. For seven enzymes, five independent 200 ns MD simulations were performed. After confirming structural stability, trajectories from 20-200 ns were used to calculate five MD-derived dynamic descriptors, including DCCM, DFI, DCI, TE, and SPM. For each descriptor, residues were ranked based on their average values across five trajectories, and the top 10-100 sites were selected. For each descriptor, all mutations at selected sites were ranked by GEMS score, and the top 100 were selected. Their union defined the hybrid mutation set. Performance was assessed by the number of variants ranked within the top 100 of the corresponding DMS landscape.
 
 <img width="865" height="675" alt="image" src="https://github.com/user-attachments/assets/6b151cb3-c3ba-4640-9e49-134a08315390" />
 
-# DMS and GEMS Data
+## DMS and GEMS Data
 
 The DMS datasets and GEMS-related input files are provided in directory `data`
 
 These files are used for evaluating the prediction performance of MD-derived descriptors.
 
-# Calculation of MD Descriptors
+## Calculation of MD Descriptors
 
-## 1. DFI and DCI
+### 1. DFI and DCI
 
 DFI and DCI are calculated from representative structures extracted from MD trajectories.
 
-### Step 1: Extract representative structures
+#### Step 1: Extract representative structures
 
 Use:
 
@@ -44,7 +44,7 @@ cpptraj -i scripts/cluster.in
 
 ---
 
-### Step 2: Calculate DFI and DCI
+#### Step 2: Calculate DFI and DCI
 
 Example:
 
@@ -65,7 +65,7 @@ The generated residue-level scores are used for ranking candidate mutation sites
 
 ---
 
-## 2. Shortest Path Map (SPM)
+### 2. Shortest Path Map (SPM)
 
 SPM analysis requires residue-residue distance and correlation matrices.
 
@@ -95,7 +95,7 @@ is used for subsequent SPM-based residue ranking.
 
 ---
 
-## 3. Transfer Entropy (TE)
+### 3. Transfer Entropy (TE)
 
 Generate covariance matrices from MD trajectories using:
 
@@ -113,7 +113,7 @@ The covariance matrices are used for transfer entropy analysis to characterize r
 
 ---
 
-## 4. Dynamic Cross-Correlation Matrix (DCCM)
+### 4. Dynamic Cross-Correlation Matrix (DCCM)
 
 Generate residue correlation matrices using:
 
@@ -131,7 +131,7 @@ The generated correlation matrices are used for DCCM-based residue ranking.
 
 ---
 
-# Identification of Distal Candidate Sites
+## Identification of Distal Candidate Sites
 
 After calculating all MD descriptors, run:
 
@@ -233,7 +233,7 @@ The workflow performs:
 4. Integration with DMS datasets
 5. Identification of distal candidate mutation sites
 
-# Output
+## Output
 
 All designed mutant sets are saved using the naming convention:
 
@@ -242,10 +242,14 @@ All designed mutant sets are saved using the naming convention:
 where `xx` denotes the corresponding MD descriptor (e.g., dfi, dci, te, dccm, or spm), and `n` indicates the number of selected candidate sites, ranging from 10 to 100.
 
 
-# Notes
+## Notes
 
 This repository provides an experimental implementation of the MD descriptor and GEMS integration workflow.
 
-# License
+## Citation
+If you used this workflow, please cite this reference:
+[Prediction of Distal Mutation Effects in Enzymes via Integration of Molecular Dynamics Descriptors and Zero-Shot Model](https://doi.org/10.1021/acs.jctc.6c00829)
+
+## License
 
 This project is released under the MIT License.
