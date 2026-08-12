@@ -117,11 +117,11 @@ The covariance matrices are used for transfer entropy analysis to characterize r
 #### Step 2
 Generate `norm_differece`file using:
 ```
-scripts/dfcfGNMMD.py --pdb casp_dry.pdb --covar casp_covar_1.dat
+scripts/dfcfGNMMD.py --pdb bgl3.pdb --covar bgl3_covar_1.dat
 ```
-`casp_covar_1.dat` is the covariance file generated in Step 1.
+`bgl3_covar_1.dat` is the covariance file generated in Step 1.
 
-The output file will be named according to the input covariance file, e.g., norm_difference_1, corresponding to `casp_covar_1.dat`.
+The output file will be named according to the input covariance file, e.g., norm_difference_1, corresponding to `bgl3_covar_1.dat`.
 
 ### 4. Dynamic Cross-Correlation Matrix (DCCM)
 
