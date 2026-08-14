@@ -54,7 +54,7 @@ from scipy.stats import pearsonr
 #
 # usage:
 #
-#     python dcfGNMMD.py --pdb casp_dry.pdb --covar casp_covar_1.dat
+#     python dcfGNMMD.py --pdb bgl3.pdb --covar bgl3_covar_1.dat
 #
 # The optimization range is fixed automatically:
 #
