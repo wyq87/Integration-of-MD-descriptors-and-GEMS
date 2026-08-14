@@ -258,7 +258,13 @@ This repository provides an experimental implementation of the MD descriptor and
 
 ## Citation
 If you used this workflow, please cite this reference:
-[Prediction of Distal Mutation Effects in Enzymes via Integration of Molecular Dynamics Descriptors and Zero-Shot Model](https://doi.org/10.1021/acs.jctc.6c00829)
+- [Prediction of Distal Mutation Effects in Enzymes via Integration of Molecular Dynamics Descriptors and Zero-Shot Model](https://doi.org/10.1021/acs.jctc.6c00829) 
+- DFI, DCI: [Perturbation-Response Scanning Reveals Ligand Entry-Exit Mechanisms of Ferric Binding Protein](https://doi.org/10.1371/journal.pcbi.1000544)\
+            [Structural dynamics flexibility informs function and evolution at a proteome scale](https://doi.org/10.1111/eva.12052)\
+            [Design of novel cyanovirin-N variants by modulation of binding dynamics through distal mutations]( https://doi.org/10.7554/eLife.67474)
+- SPM: [The shortest path method (SPM) webserver for computational enzyme design](https://doi.org/10.1093/protein/gzae005)\
+       [The challenge of predicting distal active site mutations in computational enzyme design](https://doi.org/10.1002/wcms)
+- TE:  [Study of the Allosteric Mechanism of Human Mitochondrial Phenylalanyl-tRNA Synthetase by Transfer Entropy via an Improved Gaussian Network Model and Co-evolution Analyses](https://doi.org/10.1021/acs.jpclett.3c00366)
 
 ## License
 
