@@ -257,7 +257,7 @@ where `xx` denotes the corresponding MD descriptor (e.g., dfi, dci, te, dccm, or
 This repository provides an experimental implementation of the MD descriptor and GEMS integration workflow.
 
 ## Citation
-If you used this workflow, please cite this reference:
+If you used this workflow, please cite these references:
 - [Prediction of Distal Mutation Effects in Enzymes via Integration of Molecular Dynamics Descriptors and Zero-Shot Model](https://doi.org/10.1021/acs.jctc.6c00829) 
 - DFI, DCI: [Perturbation-Response Scanning Reveals Ligand Entry-Exit Mechanisms of Ferric Binding Protein](https://doi.org/10.1371/journal.pcbi.1000544)\
             [Structural dynamics flexibility informs function and evolution at a proteome scale](https://doi.org/10.1111/eva.12052)\
